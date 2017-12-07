@@ -1,0 +1,9 @@
+/* Structural Pseudo-classes------------------ */
+
+/*This is more bulletproof to make sure we target the 4th div no matter what element comes comes before*/
+/*:nth-of-type counts from top*/
+/*nth-last-of-type counts from the bottom*/
+div:nth-last-of-type(3) {
+  background: #52bab3;
+  color: white;
+}

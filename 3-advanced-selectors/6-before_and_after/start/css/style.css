@@ -1,0 +1,51 @@
+/* Pseudo-elements -------------------------------- */
+
+.intro::first-line {
+  font-weight: bold;
+  font-size: 1.4em;
+}
+
+.intro::first-letter {
+  float: left;
+  font-size: 80px;
+  color: white;
+  padding: 5px 10px;
+  background: #384047;
+  margin: 10px 10px 0 0;
+  border-radius: 5px;
+  line-height: 1;
+}
+
+/* Following generates content before the first link */
+/* ::before and ::after don't change anything in the source code!*/
+.jpg::before {
+    /* generate content within quotes */
+    content: url(../img/icn-picture.svg); 
+    margin-right: 8px; 
+}
+
+.zip::before {
+    /* generate content within quotes */
+    content: url(../img/icn-zip.svg); 
+    margin-right: 8px; 
+}
+
+h1::before,
+h1::after {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: coral;
+    margin: 0px 10px;
+}
+
+
+
+
+
+
+
+
+

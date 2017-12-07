@@ -1,0 +1,46 @@
+:root {
+    background: #e3effb;
+}
+
+/* if anchor's href matches an id, :target will adjust the id for you if you click on the anchor */
+:target {
+    background: #384047;
+    color: white;
+}
+
+/*Give column c different styles when it is targeted*/
+#col-c:target {
+    background-color: #eff1f2;
+    color: initial;
+    box-shadow: 0 0 6px rgba(0,0,0, 0.2);
+}
+
+/* :not selects every div except the one with the identifier passed as an argument*/
+/*
+    div:not(#col-a) {
+        border: solid 1px red;
+    }
+*/
+
+/* :not can also select input elements that are not of a certain type */
+/* In this example, every input element except the submit button will not have a box-shadow */
+
+input:not([type="submit"]) {
+    box-shadow: inset 0 2px 0 rgba(0,0,0, .15);
+}
+
+/* Target every .col element except the first child, in this case, the first column */
+.col:not(:first-child),
+nav a:not(:first-child) {
+    margin-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+

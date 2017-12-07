@@ -1,0 +1,12 @@
+/* :nth-child Pseudo-classes------------------ */
+
+/*using even or odd will target even/odd list items*/
+/*Using integers will select the corresponding list item. I.E. (3) will select the third item in the list*/
+/*Using An+B => B is the selected starting point, then A is how many list items to skip */
+/*You can omit the A value if it is equal to 1*/
+/*You can also omit the B value if it is equal to zero*/
+/*Using a negative n will target list elements preceeding the Bth element*/
+li:nth-child(-n+4) {
+    background: #52bab3;
+    color: white;
+}

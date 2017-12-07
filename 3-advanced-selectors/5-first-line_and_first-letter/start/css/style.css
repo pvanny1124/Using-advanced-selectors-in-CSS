@@ -1,0 +1,21 @@
+/* Pseudo-elements -------------------------------- */
+
+/* Double-colon syntax distinguishes pseudo-elements from pseudo-classes*/
+
+/* Following only selects the first line of text rendered by the browser! */
+.intro::first-line {
+    font-weight: bold;
+    font-size: 1.4em;
+}
+
+/* Following creates a drop cap */
+.intro::first-letter {
+    float: left;
+    font-size: 80px;
+    color: white;
+    padding: 5px 10px;
+    background-color: #384047;
+    margin: 10px 10px 0 0;
+    border-radius: 5px;
+    line-height: 1;
+}
